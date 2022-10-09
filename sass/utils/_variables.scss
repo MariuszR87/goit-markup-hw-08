@@ -1,0 +1,54 @@
+:root{
+    --blue: #2196F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    --not-white:  #f5f4fa;
+    --grey-dark: #2F303A;
+    
+    --font-color-main: #212121;
+    --font-color-second: #757575;
+    --background-color-main: #FFFFFF;
+    --background-color-secondary: #2F303A;
+    --hover-color: #2196F3;
+    --figure-border: #EEEEEE;
+    --fotter-links: #ffffff99;
+    --icon-grey: #AFB1B8;
+    }
+    .class-h1 {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+      }
+      .class-h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+      }
+      .class-h3 {
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        font-size: 14px;
+      }
+      .class-h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        // text-align: left;
+        letter-spacing: 0.03em;
+      }
+
+      .contact-links-txt{
+        color: var(--font-color-second);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }

@@ -1,0 +1,21 @@
+.wrapper{
+    width: 100%;
+    background-color: var(--background-color-main);
+  }
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-not-white{
+    background-color: var(--not-white);
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
+  
+
