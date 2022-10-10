@@ -129,12 +129,12 @@ text-transform: uppercase;
   padding-bottom: 94px;
 }
 
-// @mixin xcontainer{
-//   width: 100%;
-//   min-width: 320px;
-//   margin: 0 auto;
-//   padding: 0 0;
-// }
+@mixin xcontainer{
+  // width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 @media screen and (min-width: 768px){
   xsection {
   padding-top: 60px;
