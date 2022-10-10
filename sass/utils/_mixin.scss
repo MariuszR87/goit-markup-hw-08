@@ -118,9 +118,32 @@
 }
 
 @mixin xcontainer{
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
+
+@media screen and (min-width:480px) {
+  @mixin xcontainer {
+  max-width: 480px;
+  padding: 0 15px;
+  align-items: center;
+  margin: 0 auto;
+  }
+  
+  }
+
+@media screen and (min-width:768px) {
+@mixin xcontainer {
+  
+}
+
+}
+@media screen and (min-width:1200px) {
+  @mixin xcontainer {
+    
+  }
+  
+  }
 
 

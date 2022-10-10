@@ -200,7 +200,7 @@ body {
 }
 
 .header__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
   display: -webkit-box;
@@ -334,16 +334,28 @@ body {
   background-color: var(--background-color-secondary);
 }
 
-.order-section__background-image {
-  margin: auto;
-  max-width: 1600px;
-  background-color: var(--background-color-secondary);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-  background-size: cover;
-  padding: 200px;
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px) {
+  .order-section__background-image {
+    margin: auto;
+    max-width: 1600px;
+    background-color: var(--background-color-secondary);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
+    background-size: cover;
+    padding: 200px;
+  }
 }
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .order-section__background-image {
+    margin: auto;
+    max-width: 1600px;
+    background-color: var(--background-color-secondary);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
+    background-size: cover;
+    padding: 200px;
+  }
+}
 .order-section__container {
   text-align: center;
   height: 600px;
@@ -397,7 +409,7 @@ body {
 }
 
 .feature__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -505,7 +517,7 @@ body {
 }
 
 .team__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -665,7 +677,7 @@ body {
 }
 
 .customers__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -738,7 +750,7 @@ body {
 }
 
 .footer__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -1118,7 +1130,7 @@ body {
 }
 
 .portfolio__container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
