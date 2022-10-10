@@ -1,12 +1,56 @@
+@use '../utils/mixin' as mixin;
 .js-menu-container{
-
+    width: 400px;
+    margin: 0 auto;
+    padding: 48px 40px 48px 40px;
+    background-color: aqua;
+    border: 1px solid black;
 }
 
-.js-close-menu{}
-.mobile-menu__list{}
-.mobile-menu__item{}
-.mobile-menu__link{}
-.mobile-menu-contact__list{}
+.js-close-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.mobile-menu__list{
+   list-style: none;
+}
+.mobile-menu__item{
+    text-decoration: none;
+}
+.mobile-menu__item:hover{
+    color: #2196F3; 
+}
+
+.mobile-menu__link{
+    color: var(--font-color-main);
+    @include mixin.xcontact-links;
+   
+    text-decoration: none;
+  
+      &:hover,
+      &:focus {
+      color: var(--hover-color);
+      transition-property: color;
+      transition-duration:  250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+  }
+.mobile-menu-contact__list{
+    list-style: none;
+}
 .mobile-menu-contact__item{}
-.mobile-menu-socials__list{}
-.mobile-menu-socials__item{}
+.mobile-menu-socials__list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.mobile-menu-socials__item{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
