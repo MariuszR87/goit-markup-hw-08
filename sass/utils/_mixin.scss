@@ -11,6 +11,18 @@
     text-align: center;
     letter-spacing: 0.06em;
   }
+  @mixin xclass-h1-mobile {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+  }
+
+
   @mixin xclass-h2 {
     font-weight: 700;
     font-size: 36px;
@@ -119,29 +131,47 @@
 
 @mixin xcontainer{
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }
+@media screen and (min-width: 768px){
+  xsection {
+  padding-top: 60px;
+  padding-bottom: 60px;}}
+
+  @media screen and (min-width: 1200px){
+  xsection {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }}
 
 @media screen and (min-width:480px) {
-  @mixin xcontainer {
-  max-width: 480px;
-  padding: 0 15px;
-  align-items: center;
-  margin: 0 auto;
+  xcontainer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   }
 
 @media screen and (min-width:768px) {
-@mixin xcontainer {
-  
-}
+  xcontainer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  }
 
 }
 @media screen and (min-width:1200px) {
-  @mixin xcontainer {
-    
+  xcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   }

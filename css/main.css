@@ -152,28 +152,6 @@ body {
           justify-content: space-between;
 }
 
-.wrapper {
-  width: 100%;
-  background-color: var(--background-color-main);
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-not-white {
-  background-color: var(--not-white);
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
-
 .backdrop {
   position: fixed;
   left: 0;
@@ -195,12 +173,49 @@ body {
   pointer-events: none;
 }
 
+@media screen and (min-width: 768px) {
+  xsection {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  xsection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (min-width: 480px) {
+  xcontainer {
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  xcontainer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  xcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .header {
   border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
   display: -webkit-box;
@@ -294,6 +309,22 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+    list-style: none;
+    text-align: justify;
+    gap: 46px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav {
+    display: none;
+    list-style: none;
+    text-align: justify;
+    gap: 46px;
+  }
+}
 .contact > a:nth-child(1) {
   margin-right: 50px;
 }
@@ -334,46 +365,6 @@ body {
   background-color: var(--background-color-secondary);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px) {
-  .order-section__background-image {
-    margin: auto;
-    max-width: 1600px;
-    background-color: var(--background-color-secondary);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-    background-size: cover;
-    padding: 200px;
-  }
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .order-section__background-image {
-    margin: auto;
-    max-width: 1600px;
-    background-color: var(--background-color-secondary);
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
-    background-size: cover;
-    padding: 200px;
-  }
-}
-.order-section__container {
-  text-align: center;
-  height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.order-section__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  width: 696px;
-  margin: 0 auto;
-  color: #FFFFFF;
-}
-
 .order-section__button {
   font-family: "Roboto";
   font-style: normal;
@@ -403,6 +394,61 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px) {
+  .order-section__background-image {
+    margin: auto auto;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/background480@x2.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/background480@x2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+    padding: 118px auto;
+  }
+  .order-section__container {
+    text-align: center;
+    width: 100%;
+  }
+  .order-section__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .order-section__background-image {
+    margin: auto;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/backround480.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/backround480.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 480px 400px;
+  }
+  .order-section__container {
+    text-align: center;
+    width: 100%;
+  }
+  .order-section__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
 .feature {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -410,6 +456,7 @@ body {
 
 .feature__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -518,6 +565,7 @@ body {
 
 .team__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -678,6 +726,7 @@ body {
 
 .customers__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -751,6 +800,7 @@ body {
 
 .footer__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -1131,6 +1181,7 @@ body {
 
 .portfolio__container {
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 0;
 }

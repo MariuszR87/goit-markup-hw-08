@@ -1,5 +1,6 @@
 @use '../utils/mixin' as mixin;
 
+
 .nav{
   display: flex;
   list-style: none;
@@ -39,3 +40,21 @@
   }
   }
 
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px){
+    .nav{
+      display: none;
+      list-style: none;
+      text-align: justify; 
+      gap: 46px;
+      }
+  
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px){
+    .nav{
+      display: none;
+      list-style: none;
+      text-align: justify; 
+      gap: 46px;
+      }
+  
+  }
