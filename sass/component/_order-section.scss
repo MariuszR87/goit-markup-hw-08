@@ -19,7 +19,6 @@
   background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-top: 30px;
   text-align: center;
   border-style: none;
   padding: 10px 42px;
@@ -33,16 +32,19 @@
     } 
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+(min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), 
+(min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
 .order-section__background-image {
-  margin: auto auto;
+  margin: 0 auto;
   width: 100%;
   background-color: var(--background-color-secondary);
-  background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(/images/background480@x2.jpg);
+  background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(/images/background-mobile@2x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 480px 400px;
-  padding: 118px auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 .order-section__container {
   text-align: center;
@@ -51,7 +53,7 @@
 }
 .order-section__title {
   @include mixin.xclass-h1-mobile;
-  
+  margin-bottom: 30px;
   // width: 696px;
   // margin: 0 auto;
   color: #FFFFFF;
@@ -65,26 +67,87 @@
   margin: auto;
   width: 100%;
   background-color: var(--background-color-secondary);
-  background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(/images/backround480.jpg);
-  background-size: cover;
+  background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(/images/backround-mobile.jpg);
+  
   background-repeat: no-repeat;
   background-size: 480px 400px;
-  // padding: 10px;
+  background-position: center top;
+  background-size: cover;
+ padding-top: 118px;
+ padding-bottom: 118px;
+ 
 }
 .order-section__container {
   text-align: center;
   width: 100%;
+  padding-left: auto;
+ padding-right: auto;
   // margin: 0 auto;
   // display: none;
 }
 .order-section__title {
   @include mixin.xclass-h1-mobile;
-  
-  // width: 696px;
-  // margin: 0 auto;
+  margin-bottom: 30px;
+
   color: #FFFFFF;
 }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .order-section__background-image {
+    margin: auto;
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(/images/background-tablet.jpg);
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 768px 400px;
+    background-size: cover;
+   padding-top: 118px;
+   padding-bottom: 118px;
+  }
+
+  .order-section__container {
+    text-align: center;
+    width: 100%;
+    padding-left: auto;
+   padding-right: auto;
+    // margin: 0 auto;
+    // display: none;
+  }
+  .order-section__title {
+    @include mixin.xclass-h1-mobile;
+    margin-bottom: 30px;
+  
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 1200px){
+.order-section__background-image {
+  margin: auto;
+  max-width: 1600px;
+  background-color: var(--background-color-secondary);
+  background-image: linear-gradient( 0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ), url(https://raw.githubusercontent.com/MariuszR87/goit-markup-hw-04/master/images/backgroundimage.jpg);
+  background-size: cover;
+  padding: 200px;
+}
+.order-section__container {
+  text-align: center;
+  
+  max-height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.order-section__title {
+  @include mixin.xclass-h1;
+  
+  width: 696px;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
 }
 
 

@@ -1,4 +1,4 @@
-// @use '../utils/mixin' as mixin;
+@use '../utils/mixin' as mixin;
 // .js-menu-container{
 //     width: 300px;
 //     margin: 0 auto;
@@ -54,3 +54,115 @@
 //     flex-direction: row;
 //     gap: 10px;
 // }
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 768px;
+    height: 100vh;
+    padding: 48px 40px 48px 40px;
+    background-color: var(--white);
+    transform: translateY(500%);
+    transition: transform 450ms ease-in-out;
+    &.is-open {
+      transform: translateY(0);
+    }
+    &__button {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      fill: var(--black);
+      width: 40px;
+      height: 40px;
+      background-color: var(--white);
+      border: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      border-radius: 50%;
+  
+      &:hover,
+      &:focus {
+        fill: var(--blue);
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    &__link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: var(--darkgrey);
+  
+      &:hover,
+      &:focus,
+      &--active {
+        color: var(--blue);
+      }
+    }
+  
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    &__contact-item {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: var(--blue);
+  
+      &--grey {
+        color: var(--lightgrey);
+        font-size: 24px;
+        line-height: 1.17;
+        margin-top: 32px;
+      }
+    }
+    &__social-list {
+      padding-top: 64px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  
+    &__social-link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      letter-spacing: 0.02em;
+      color: var(--blue);
+      
+    }
+  
+    &__social-item {
+      &:not(:last-child)::after {
+        content: "";
+        margin-left: 10px;
+       
+        border: 1px solid rgba(33, 33, 33, 0.2);
+      
+      }
+    }
+  }
+  @media screen and (min-width: 780px) {
+    .mobile-menu {
+      display: none;
+    }
+  }

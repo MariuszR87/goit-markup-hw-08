@@ -129,12 +129,12 @@ text-transform: uppercase;
   padding-bottom: 94px;
 }
 
-@mixin xcontainer{
-  width: 100%;
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 0;
-}
+// @mixin xcontainer{
+//   width: 100%;
+//   min-width: 320px;
+//   margin: 0 auto;
+//   padding: 0 0;
+// }
 @media screen and (min-width: 768px){
   xsection {
   padding-top: 60px;
@@ -147,7 +147,7 @@ text-transform: uppercase;
   }}
 
 @media screen and (min-width:480px) {
-  xcontainer {
+  @mixin xcontainer {
     max-width: 480px;
     margin: 0 auto;
     padding-left: 15px;
@@ -157,7 +157,7 @@ text-transform: uppercase;
   }
 
 @media screen and (min-width:768px) {
-  xcontainer {
+  @mixin xcontainer {
     max-width: 768px;
     margin: 0 auto;
     padding-left: 15px;
@@ -167,7 +167,7 @@ text-transform: uppercase;
 
 }
 @media screen and (min-width:1200px) {
-  xcontainer {
+  @mixin xcontainer {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
