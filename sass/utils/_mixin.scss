@@ -2,16 +2,7 @@
 // @include mixin.xsection;
 // @include mixin.xcontainer;
 // @include mixin.xclass-h1;
-@mixin xsection {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-@mixin xcontainer{
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
-}
 
 @mixin xclass-h1 {
     font-weight: 900;
@@ -121,6 +112,15 @@
   letter-spacing: 0.03em;
 }
 
+@mixin xsection {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+@mixin xcontainer{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 
 
