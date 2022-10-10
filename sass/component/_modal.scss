@@ -1,3 +1,6 @@
+@use '../utils/mixin' as mixin;
+
+
 .modal{
   position: absolute;
   left: 50%;
@@ -49,15 +52,11 @@
   margin-bottom: 10px;
 }
 .modal__label{
+  @include mixin.xmodal__label;
   display: flex;
   flex-direction: column;
   margin: auto;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+ 
   color: var(--font-color-second);
 }
 .modal__input{
@@ -112,12 +111,7 @@
   margin-top: 0px;
   margin-left: 50px;
   display:inline;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
+  @include mixin.xmodal__label;
 }
 .modal__checkbox-label::before {
   display: block;
@@ -158,12 +152,7 @@
       border-radius: 3px;
 }
 .modal__submit-button{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  border: none;
+  @include mixin.xbutton;
   color: var(--white);
   display: flex;
   align-items: center;

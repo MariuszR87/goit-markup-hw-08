@@ -1,3 +1,5 @@
+@use '../utils/mixin' as mixin;
+
 .services {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -8,11 +10,7 @@
   padding: 0 0;
 }
 .services__tittle{
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include mixin.xclass-h2;
   margin-top: 0;
   margin-bottom: 50px;
 }

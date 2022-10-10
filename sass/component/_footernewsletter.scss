@@ -1,3 +1,6 @@
+@use '../utils/mixin' as mixin;
+
+
 .footer-newsletter{
     display: flex;
     align-items: center;
@@ -8,12 +11,9 @@
     
   }
   .footer-newsletter__tittles {
+    @include mixin.xclass-h3;
+
     color: var(--white);
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 14px;
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
@@ -40,14 +40,10 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include mixin.xbutton;
     color: var(--white);
     margin-top: 32px;
-    border: none;
+    
 
       &:hover,
       &:focus{

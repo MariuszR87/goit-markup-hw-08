@@ -1,5 +1,17 @@
 // @use '../utils/mixin' as mixin;
+// @include mixin.xsection;
+// @include mixin.xcontainer;
 // @include mixin.xclass-h1;
+@mixin xsection {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@mixin xcontainer{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 
 @mixin xclass-h1 {
     font-weight: 900;
@@ -29,20 +41,86 @@
     // text-align: left;
     letter-spacing: 0.03em;
   }
+  @mixin xlogo {
+    font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  }
+
 @mixin xcontact-links {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
 }
 
-  @mixin xcontainer{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 0;
-  }
-  @mixin xsection {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+@mixin xfeature__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--font-color-second)
+}
+@mixin xfooter__adress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+@mixin xmodal__label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+@mixin xbutton {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+}
+@mixin xportfolio-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+@mixin xportfolio__moving-overlay--text {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@mixin xportfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+@mixin xportfolio__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+@mixin xteam__figure--text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+
+
+

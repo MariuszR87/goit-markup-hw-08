@@ -1,10 +1,8 @@
+@use '../utils/mixin' as mixin;
+
 .social-media__tittle {
   color: var(--white);
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  font-size: 14px;
+  @include mixin.xclass-h3;
   margin-bottom: 15px;
 }
 .social-media{

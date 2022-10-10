@@ -1,11 +1,11 @@
+@use '../utils/mixin' as mixin;
+
+
 .feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  @include mixin.xsection;
   }
   .feature__container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 0;
+    @include mixin.xcontainer;
   }
   
   .feature__list {
@@ -18,16 +18,11 @@
     background-color: var(--not-white);
   }
   .feature__tittle{
-    font-weight: 700;
-    line-height: 1.14;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 14px;
+    @include mixin.xclass-h3;
+    
     margin-bottom: 10px;
   }
   .feature__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include mixin.xfeature__text;
     color: var(--font-color-second)
   }

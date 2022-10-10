@@ -1,11 +1,10 @@
+@use '../utils/mixin' as mixin;
+
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include mixin.xsection;
 }
 .portfolio__container{
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
+  @include mixin.xcontainer;
 }
 .portfolio__button-list{
   padding: 0px 0px 50px 0px;
@@ -21,12 +20,8 @@
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+
+  @include mixin.xportfolio-button;
 }
 .portfolio__button:hover,
 .portfolio__button:focus{
@@ -99,26 +94,15 @@
   transition: transform 1s ease;
 }
 .portfolio__moving-overlay--text{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include mixin.xportfolio__moving-overlay--text;
   padding: 49px 45px 49px 24px;
   color: var(--white);
 }
 .portfolio__title{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include mixin.xportfolio__title;
   margin-bottom: 4px;
 }
 .portfolio__description{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include mixin.xportfolio__description;
   color:var(--font-color-second);
 }
