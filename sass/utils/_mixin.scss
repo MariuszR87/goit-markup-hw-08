@@ -1,0 +1,48 @@
+// @use '../utils/mixin' as mixin;
+// @include mixin.xclass-h1;
+
+@mixin xclass-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  @mixin xclass-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  @mixin xclass-h3 {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+  }
+  @mixin xclass-h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    // text-align: left;
+    letter-spacing: 0.03em;
+  }
+@mixin xcontact-links {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+}
+
+  @mixin xcontainer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+  @mixin xsection {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }

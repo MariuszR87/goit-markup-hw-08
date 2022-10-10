@@ -1,12 +1,11 @@
+@use '../utils/mixin' as mixin;
 
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .customers__container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 0;
+  @include mixin.xcontainer;
 }
 
 .customers__tittle {

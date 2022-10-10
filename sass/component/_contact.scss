@@ -1,17 +1,16 @@
+@use '../utils/mixin' as mixin;
+
 .contact > a:nth-child(1){
   margin-right: 50px;
 }
 .contact__links {
   color: var(--font-color-second);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include mixin.xcontact-links;
   text-decoration: none;
 
     
-    &__links:hover,
-    &__links:focus {
+    &:hover,
+    &:focus {
     color: var(--hover-color);
     fill: var(--hover-color);
     transition-property: color, fill;
