@@ -179,20 +179,16 @@ body {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  xsection {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 .header {
   border-bottom: 1px solid #ECECEC;
 }
 
 .header__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,8 +562,10 @@ body {
 
 .feature__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
 }
 
 .feature__list {
@@ -674,8 +672,10 @@ body {
 
 .team__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
 }
 
 .team__tittle {
@@ -834,8 +834,10 @@ body {
 
 .customers__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
 }
 
 .customers__tittle {
@@ -907,8 +909,10 @@ body {
 
 .footer__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
 }
 
 .footer__setting {
@@ -1287,8 +1291,10 @@ body {
 
 .portfolio__container {
   min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 0;
+  padding-inline: 15px;
 }
 
 .portfolio__button-list {
